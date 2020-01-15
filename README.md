@@ -21,7 +21,7 @@ For the further actions the app should be running (by default on `127.0.0.1:8080
 Run Schemathesis CLI:
 
 ```shell script
-$ schemathesis run --base-url=http://0.0.0.0:8080/api/ http://0.0.0.0:8080/api/openapi.json
+$ schemathesis run http://0.0.0.0:8080/api/openapi.json
 ```
 
 Run Schemathesis-based tests:
