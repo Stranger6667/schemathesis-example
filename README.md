@@ -10,6 +10,12 @@ Install dependencies:
 $ pip install -r requirements.txt -r requirements-test.txt
 ```
 
+Setup the database via `docker-compose`:
+
+```shell script
+$ docker-compose up
+```
+
 To run the app:
 
 ```shell script
