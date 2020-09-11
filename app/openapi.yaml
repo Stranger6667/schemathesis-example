@@ -17,14 +17,14 @@ paths:
           type: integer
     get:
       summary: Get a booking by ID
-      operationId: example.views.get_booking_by_id
+      operationId: app.views.get_booking_by_id
       responses:
         "200":
           description: OK
   /bookings/:
     post:
       summary: Create a new booking
-      operationId: example.views.create_booking
+      operationId: app.views.create_booking
       responses:
         "201":
           description: OK

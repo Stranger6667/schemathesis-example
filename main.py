@@ -1,5 +1,5 @@
-from .settings import load_config
-from .app import create_app
+from app.settings import load_config
+from app.app import create_app
 
 
 def main(config_path, port):
@@ -9,4 +9,4 @@ def main(config_path, port):
 
 
 if __name__ == "__main__":
-    main("config.json", port=8080)
+    main("config.json", port=5000)

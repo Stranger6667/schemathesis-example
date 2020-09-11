@@ -1,3 +1,0 @@
-{
-  "DB_URL": "postgresql://test:password@127.0.0.1:5433/schemathesis-example"
-}

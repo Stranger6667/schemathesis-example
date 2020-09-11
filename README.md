@@ -4,30 +4,18 @@ A simple web app, built with Connexion, AioHTTP, attrs and asyncpg. Contains man
 
 Schemathesis repo: https://github.com/kiwicom/schemathesis
 
-Install dependencies:
-
-```shell script
-$ pip install -r requirements.txt -r requirements-test.txt
-```
-
-Setup the database via `docker-compose`:
+Start the application via `docker-compose`:
 
 ```shell script
 $ docker-compose up
 ```
 
-To run the app:
-
-```shell script
-$ python -m example
-```
-
-For the further actions the app should be running (by default on `127.0.0.1:8080`)
+For the further actions the app should be running (by default on `127.0.0.1:5000`)
 
 Run Schemathesis CLI:
 
 ```shell script
-$ schemathesis run http://0.0.0.0:8080/api/openapi.json
+$ schemathesis run http://0.0.0.0:5000/api/openapi.json
 ```
 
 Run Schemathesis-based tests:
