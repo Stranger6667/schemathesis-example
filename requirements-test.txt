@@ -26,7 +26,7 @@ pytest-subtests==0.3.2    # via schemathesis
 pytest==6.0.2             # via -r requirements-test.in, pytest-subtests, schemathesis
 pyyaml==5.3.1             # via schemathesis
 requests==2.24.0          # via schemathesis
-schemathesis==2.4.0       # via -r requirements-test.in
+schemathesis==2.4.1       # via -r requirements-test.in
 six==1.15.0               # via jsonschema, junit-xml, packaging
 sortedcontainers==2.2.2   # via hypothesis
 starlette==0.13.8         # via schemathesis
