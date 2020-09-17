@@ -1,5 +1,10 @@
+import logging
+
 from app.settings import load_config
 from app.app import create_app
+
+
+logging.basicConfig(level=logging.INFO)
 
 
 def main(config_path, port):
