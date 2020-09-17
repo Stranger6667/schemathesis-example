@@ -12,7 +12,7 @@ services:
     ports:
       - 5433:5432
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: test
       POSTGRES_USER: test
       POSTGRES_DB: schemathesis-example
     volumes:
