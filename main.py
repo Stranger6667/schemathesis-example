@@ -5,7 +5,7 @@ from app.app import create_app
 def main(config_path, port):
     config = load_config(config_path)
     app = create_app(config)
-    app.run(port)
+    app.run(port, debug=True, use_default_access_log=True)
 
 
 if __name__ == "__main__":
