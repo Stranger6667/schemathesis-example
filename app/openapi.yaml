@@ -4,7 +4,7 @@ info:
   description: API description in Markdown.
   version: 1.0.0
 servers:
-  - url: https://127.0.0.1:8080/api
+  - url: http://127.0.0.1:5000/api
 paths:
   /bookings/{booking_id}:
     parameters:
