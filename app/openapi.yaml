@@ -47,4 +47,3 @@ components:
         is_active:
           type: boolean
       type: object
-      required: [id, name, is_active]
