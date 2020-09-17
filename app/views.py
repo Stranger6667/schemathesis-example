@@ -24,4 +24,4 @@ async def create_booking(request: web.Request, body) -> web.Response:
         name=body["name"],
         is_active=body["is_active"],
     )
-    return web.json_response(booking.asdict())
+    return web.json_response(booking.asdict(), status=201)
