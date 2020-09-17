@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: Sample API
-  description: API description in Markdown.
+  title: Booking API
+  description: A flights booking system.
   version: 1.0.0
 servers:
   - url: http://127.0.0.1:5000/api
