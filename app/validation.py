@@ -1,4 +1,3 @@
-
 def is_valid_name(name: str) -> bool:
     try:
         first, last = name.split(" ")
