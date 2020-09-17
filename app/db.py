@@ -1,4 +1,5 @@
-from typing import Generator, Optional
+import asyncio
+from typing import Generator, Optional, List
 
 import asyncpg
 from aiohttp import web
@@ -19,6 +20,14 @@ async def get_booking_by_id(pool, *, booking_id: int) -> Optional[models.Booking
     )
     if row is not None:
         return models.Booking(**row)
+
+
+async def get_bookings(pool, *, limit: int = 20) -> List[models.Booking]:
+    rows = await pool.fetch(
+        "SELECT * FROM booking LIMIT $1", limit
+    )
+    await asyncio.sleep(0.0001 * len(rows))
+    return [models.Booking(**row) for row in rows]
 
 
 async def create_booking(
