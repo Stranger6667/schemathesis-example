@@ -21,5 +21,5 @@ $ schemathesis run http://0.0.0.0:5000/api/openapi.json
 Run Schemathesis-based tests:
 
 ```shell script
-$ pytest -v test_example.py
+$ pytest -v test
 ```
