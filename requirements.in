@@ -1,3 +1,0 @@
-asyncpg
-attrs
-connexion[aiohttp,swagger-ui]
